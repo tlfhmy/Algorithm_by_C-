@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
     int n = 0;
-    cout << "Please enter number of input numbers:";
+    cout << "Please enter number of random numbers:";
     cin >> n;
     int *p = new int[n];
     srand(time(NULL));
@@ -23,7 +23,7 @@ int main()
     for(int i = 1; i < n; i++){
         int key = p[i];
         int j = i - 1;
-        while(j > -1 & p[j] > key){
+        while(j > -1 && p[j] > key){
             p[j+1] = p[j];
             j -= 1;
         }
